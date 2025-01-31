@@ -13,6 +13,7 @@ import { Link } from "react-scroll";
 import { IoMdMail } from "react-icons/io";
 import prop7 from "../assets/images/prop7.jpg";
 import prop8 from "../assets/images/prop8.jpg";
+import Logo from "../assets/Logo/Reva-Landmark.png"
 
 const Footer = () => {
   
@@ -25,6 +26,11 @@ const Footer = () => {
       >
         <div className="flex flex-col justify-center items-start gap-5">
           <h1 className="text-white text-2xl font-semibold">ABOUT US</h1>
+          <img
+            src={Logo}
+            alt="reva-landmarks"
+            className="w-[150px] cursor-pointer scale-125"
+          />
           <p className="text-slate-200 text-justify">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nisi,
             aspernatur ipsam soluta illo amet dolorem delectus excepturi
@@ -112,7 +118,7 @@ const Footer = () => {
 
       <div
         id="icon-box"
-        className="bg-red-600 p-4 rounded-full hover:bg-black cursor-pointer fixed lg:bottom-12 bottom-6 right-6"
+        className="bg-orange-600 p-4 rounded-full hover:bg-black cursor-pointer fixed lg:bottom-12 bottom-6 right-6"
       >
         <Link to="hero" spy={true} offset={-100} smooth={true}>
           <FaArrowUp className="size-6 text-white" />

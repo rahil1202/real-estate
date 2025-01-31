@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { FaXmark, FaBars} from "react-icons/fa6";
-import { FaPhoneAlt, FaUserCircle } from "react-icons/fa";
-import logo from "../assets/images/logo.png";
+import { FaPhoneAlt } from "react-icons/fa";
+import logo from "../assets/Logo/Reva-Landmark.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,21 +23,21 @@ const Header = () => {
     <nav
       className={`${
        "light bg-[#f3f3f3]"
-      } flex justify-between items-center gap-4 lg:px-20 px-4 py-3 sticky top-0 z-30`}
+      } flex justify-between items-center gap-4 lg:px-20 px-4 py-6 sticky top-0 z-30`}
     >
       <div id="logo">
         <img
           src={logo}
-          alt="company-logo"
-          className="lg:w-[150px] w-[120px] cursor-pointer"
+          alt="reva-landmarks"
+          className="lg:w-[150px] w-[120px] cursor-pointer scale-150"
         />
       </div>
 
-      <ul className="lg:flex justify-center items-center gap-8 hidden">
+      <ul className="lg:flex justify-center items-center gap-x-1 hidden">
         {navItems.map(({ link, path }) => (
           <li key={path}>
             <Link
-              className="text-black text-[15px] uppercase font-semibold cursor-pointer px-3 py-2 rounded-lg hover:bg-red-600 hover:text-white"
+              className="text-black text-[15px] uppercase font-semibold cursor-pointer px-3 py-3 rounded-lg hover:bg-red-600 hover:text-white"
               to={path}
               spy={true}
               offset={-100}
@@ -87,8 +87,7 @@ const Header = () => {
           <h1 className="lg:text-xl text-sm text-black font-semibold">
             +91 789456123
           </h1>
-        </div>
-        <FaUserCircle className="size-6 text-red-600" />
+        </div>        
       </div>
     </nav>
   );
