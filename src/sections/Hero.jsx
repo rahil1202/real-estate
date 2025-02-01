@@ -8,7 +8,7 @@ const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
     { src: image1, text: "Find your next Premium 2 Layer Shops & Showrooms" },
-    { src: image2 , text: "Luxury Commercial Spaces with Premium Brands Onboard (SubWay, Koa Caf, and more..)" },
+    { src: image2 , text: "Luxury Commercial Spaces with Premium Brands" },
     { src: image3, text: "Commercial Property at 75 Mtr Highly Developing Road of New Vadodara" },
     { src: image4, text: "Invest In commercial Property & Get 8% ROI" }
   ];
@@ -25,8 +25,8 @@ const Hero = () => {
     <div className="relative bg-white">
       {/* Hero Section */}
       <section
-        id="hero"
-        className="w-[95%] h-[650px] mx-auto bg-fill bg-center rounded-2xl overflow-hidden relative transition-all duration-1000 ease-in-out "
+        id="home"
+        className="w-[95%] h-[650px] mx-auto bg-fit bg-center rounded-2xl overflow-hidden relative transition-all duration-1000 ease-in-out "
         style={{
           backgroundImage: `url(${images[currentIndex].src})`,
           backgroundSize: "cover",

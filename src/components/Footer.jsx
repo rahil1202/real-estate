@@ -8,7 +8,6 @@ import {
 import { Link } from "react-scroll";
 import Logo from "../assets/Logo/Reva-Landmark.png";
 import image1 from "../assets/images/clublife/01.png";
-import image2 from "../assets/images/clublife/02.png";
 
 const Footer = () => {
   return (
@@ -30,12 +29,12 @@ const Footer = () => {
 
               {/* Social Icons */}
               <div className="flex gap-4 pt-4">
-                <a href="#" className="group">
+                <a href="https://www.facebook.com/revagroupvadodara" className="group">
                   <div className="p-3 bg-white rounded-xl shadow-lg hover:bg-blue-600 transition-all duration-300 group-hover:shadow-blue-200">
                     <FaFacebook className="w-5 h-5 text-blue-600 group-hover:text-white" />
                   </div>
                 </a>
-                <a href="#" className="group">
+                <a href="https://www.instagram.com/revagroupvadodara" className="group">
                   <div className="p-3 bg-white rounded-xl shadow-lg hover:bg-pink-500 transition-all duration-300 group-hover:shadow-pink-200">
                     <FaInstagram className="w-5 h-5 text-pink-500 group-hover:text-white" />
                   </div>
@@ -62,34 +61,33 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Latest Properties */}
+            {/* Latest Property */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold font-secondary text-gray-900">Latest Properties</h3>
-              <div className="space-y-6">
-                {[image1, image2].map((property, index) => (
-                  <div key={index} className="flex gap-4 group">
-                    <div className="w-32 h-24 overflow-hidden rounded-xl">
-                      <img
-                        src={property}
-                        alt={`Property ${index + 1}`}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                      />
-                    </div>
-                    <div className="space-y-1">
-                      <h4 className="text-gray-900 font-medium line-clamp-2 group-hover:text-primary transition-colors">
-                        Reva Clublife - 2 & 3 BHK Apartments
-                      </h4>
-                    </div>
-                  </div>
-                ))}
+              <h3 className="text-2xl font-bold font-secondary text-gray-900">Latest Property</h3>
+              <div className="flex gap-4 group">
+                <div className="w-32 h-24 overflow-hidden rounded-xl">
+                  <img
+                    src={image1}
+                    alt="Latest Property"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+                <div className="space-y-1">
+                  <h4 className="text-gray-900 font-medium line-clamp-2 group-hover:text-primary transition-colors">
+                    Reva Clublife - 2 & 3 BHK Apartments
+                  </h4>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Copyright */}
-          <div className="mt-16 pt-8 border-t border-gray-200">
-            <p className="text-center text-gray-600 font-semibold font-secondary">
-              Copyright Real Estate, All Rights Reserved
+          <div className="mt-16 pt-8 border-t border-gray-200 text-center">
+            <p className="text-gray-600 font-semibold font-secondary">
+              Copyright &copy; {new Date().getFullYear()} Reva Group, All Rights Reserved.
+            </p>
+            <p className="text-gray-600 font-secondary mt-2">
+              Designed & Developed by <a href="https://theonebranding.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">TheOneBranding</a>
             </p>
           </div>
         </div>
