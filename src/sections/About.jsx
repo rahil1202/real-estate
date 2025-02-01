@@ -40,7 +40,7 @@ const About = () => {
               className="absolute bottom-12 -right-8 bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer"
             >
               <div className="text-center">
-                <span className="text-5xl font-bold text-primary">10+</span>
+                <span className="text-5xl font-bold text-primary">27+</span>
                 <p className="text-gray-600 mt-2 font-medium">Years of Excellence</p>
               </div>
             </div>
@@ -56,7 +56,7 @@ const About = () => {
               <h2 className="mt-6 text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 Reva LandMark
                 <span className="block text-2xl text-gray-600 mt-4 font-medium">
-                  Building Dreams Since 2008
+                  Building Dreams Since 1998
                 </span>
               </h2>
             </div>
@@ -67,10 +67,9 @@ const About = () => {
               data-aos-delay="200"
               className="space-y-8"
             >
-              <p className="text-gray-600 text-lg leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ratione 
-                repudiandae vero magnam suscipit culpa ex dolor placeat voluptatibus 
-                delectus. Magni libero repellendus adipisci id dignissimos nemo quaerat.
+              <p className="text-gray-600 text-lg leading-relaxed font-secondary">
+               We began in 1998 with a vision of providing sophistication and established a milestone with a REVA group in 2019. At Reva Group, we offer a variety of unique living areas for your completely joyful lifestyle. In addition to providing satisfaction and tranquillity, we provide ultramodern comforts and a lifestyle that appeals to the most discerning tastes. Providing comprehensive residential project expertise is what we do.
+
               </p>
 
               {/* Features Grid */}

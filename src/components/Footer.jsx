@@ -3,11 +3,12 @@ import {
   FaInstagram, 
   FaArrowUp,
   FaMapMarkerAlt,
-  FaPhoneAlt,
-  FaEnvelope
+  FaPhoneAlt,  
 } from "react-icons/fa";
 import { Link } from "react-scroll";
 import Logo from "../assets/Logo/Reva-Landmark.png";
+import image1 from "../assets/images/clublife/01.png";
+import image2 from "../assets/images/clublife/02.png";
 
 const Footer = () => {
   return (
@@ -23,10 +24,8 @@ const Footer = () => {
                 alt="reva-landmarks"
                 className="w-[180px] transform hover:scale-105 transition-all duration-300"
               />
-              <p className="text-gray-600 leading-relaxed">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni nisi,
-                aspernatur ipsam soluta illo amet dolorem delectus excepturi
-                suscipit voluptatum.
+              <p className="text-gray-600 leading-relaxed font-secondary">
+               We began in 1998 with a vision of providing sophistication and established a milestone with a REVA group in 2019. At Reva Group, we offer a variety of unique living areas for your completely joyful lifestyle. In addition to providing satisfaction and tranquillity, we provide ultramodern comforts and a lifestyle that appeals to the most discerning tastes. Providing comprehensive residential project expertise is what we do.
               </p>
 
               {/* Social Icons */}
@@ -60,10 +59,6 @@ const Footer = () => {
                   <FaPhoneAlt className="w-4 h-4 text-primary" />
                   <p className="text-gray-600">+91 9909021510</p>
                 </div>
-                <div className="flex items-center gap-3">
-                  <FaEnvelope className="w-4 h-4 text-primary" />
-                  <p className="text-gray-600">adeeb01@gmail.com</p>
-                </div>
               </div>
             </div>
 
@@ -71,31 +66,19 @@ const Footer = () => {
             <div className="space-y-6">
               <h3 className="text-2xl font-bold font-secondary text-gray-900">Latest Properties</h3>
               <div className="space-y-6">
-                {[
-                  {
-                    image: "prop7",
-                    title: "Villa with amazing sea view",
-                    price: "$ 240500"
-                  },
-                  {
-                    image: "prop8",
-                    title: "Villa with fully furnished interior",
-                    price: "$ 400500"
-                  }
-                ].map((property, index) => (
+                {[image1, image2].map((property, index) => (
                   <div key={index} className="flex gap-4 group">
                     <div className="w-32 h-24 overflow-hidden rounded-xl">
                       <img
-                        src={`../assets/images/${property.image}.jpg`}
-                        alt={property.title}
+                        src={property}
+                        alt={`Property ${index + 1}`}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                       />
                     </div>
                     <div className="space-y-1">
                       <h4 className="text-gray-900 font-medium line-clamp-2 group-hover:text-primary transition-colors">
-                        {property.title}
+                        Reva Clublife - 2 & 3 BHK Apartments
                       </h4>
-                      <p className="text-primary font-semibold">{property.price}</p>
                     </div>
                   </div>
                 ))}

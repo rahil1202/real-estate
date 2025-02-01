@@ -14,7 +14,7 @@ const Header = () => {
     { link: "Home", path: "home" },
     { link: "About", path: "about" },
     { link: "Properties", path: "properties" },
-    { link: "Services", path: "services" },
+    { link: "Gallery", path: "gallery" },
     { link: "Testimonials", path: "testimonials" },
     { link: "Contact", path: "contact" },
   ];
@@ -85,7 +85,7 @@ const Header = () => {
         <div className="flex justify-center items-center lg:gap-1 gap-1">
           <FaPhoneAlt className="size-4 text-primary" />
           <h1 className="lg:text-xl text-sm text-black font-semibold">
-            +91 9909019620 | +91 9909019621
+            +91 9909019620 | +91 9909021510
           </h1>
         </div>        
       </div>

@@ -16,7 +16,7 @@ const Contact = () => {
 
   return (
     <div className="bg-white py-20">
-      <section className="lg:w-[95%] w-full m-auto">
+      <section className="lg:w-[95%] w-full m-auto" id="contact">
         <div className="bg-gradient-to-r from-primary/10 to-primary/20 rounded-2xl grid lg:grid-cols-2 grid-cols-1 gap-10 overflow-hidden">
           {/* Form Section */}
           <div className="lg:p-12 p-6" data-aos="fade-right">
