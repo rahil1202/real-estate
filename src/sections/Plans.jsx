@@ -5,14 +5,14 @@ import plan4 from "../assets/images/Plans/shop-plan.jpg";
 
 const Plans = () => {
   return (
-    <div className="bg-gray-100 py-20">
-      <section className="lg:w-[85%] w-full h-fit m-auto bg-white rounded-3xl shadow-xl flex justify-center flex-col items-center lg:px-20 px-6 py-20 gap-20">
+    <div className="bg-white">
+      <section className="lg:w-[100%] w-full h-fit m-auto bg-white rounded-3xl shadow-xl flex justify-center flex-col items-center lg:px-20 px-6 py-10 gap-20">
         {/* Header Section */}
         <div className="w-full max-w-4xl text-center">
-          <span className="text-primary font-semibold text-lg uppercase tracking-wider px-6 py-2 bg-primary/10 rounded-full inline-block mb-6">
+          <span className="text-primary font-semibold font-primary text-lg uppercase tracking-wider px-6 py-2 bg-primary/10 rounded-full inline-block mb-6">
             Building Plans
           </span>
-          <h1 data-aos="zoom-in" className="text-black text-[42px] font-semibold font-primary leading-tight">
+          <h1 data-aos="zoom-in" className="text-black text-[42px] font-semibold font-secondary leading-tight">
             Explore Our <br /> 
             <span className="text-primary">Architectural</span> Designs
           </h1>

@@ -1,19 +1,16 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaBuilding, FaRoad, FaParking, FaShieldAlt, FaBug, FaToilet, FaWater, FaExpandArrowsAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { FaBuilding, FaPaintRoller, FaBath, FaFaucet, FaThLarge, FaBolt } from "react-icons/fa";
 
-const Amenities = () => {
-  const amenities = [
-    { icon: FaBuilding, title: "A Striking Elevation", desc: "A premium elevation that provides unobstructed views and modern aesthetics." },
-    { icon: FaRoad, title: "Wide Passages", desc: "Designed for easy mobility and smooth traffic flow within the complex." },
-    { icon: FaParking, title: "Large Concrete Instant Parking", desc: "Ground floor parking with ample space for visitors and tenants." },
-    { icon: FaShieldAlt, title: "24/7 CCTV Security", desc: "Surveillance at strategic locations ensuring complete safety." },
-    { icon: FaBug, title: "Anti-Termite Treatment", desc: "Enhanced durability with advanced anti-termite treatment for the entire structure." },
-    { icon: FaToilet, title: "Attached Toilets", desc: "Provision for attached toilets in shops and offices for convenience." },
-    { icon: FaWater, title: "Water & Sanitation Points", desc: "Essential water and sanitation points provided throughout the complex." },
-    { icon: FaExpandArrowsAlt, title: "18.5 Feet High Ceilings", desc: "Expansive ceiling height providing a grand and spacious experience." },
-    { icon: FaMapMarkerAlt, title: "Prime Location", desc: "Located at a strategic point offering excellent connectivity and accessibility." }
+const Specifications = () => {
+  const specifications = [
+    { icon: FaBuilding, title: "Structure", desc: "All RCC & brick masonry work as per structural engineer design." },
+    { icon: FaPaintRoller, title: "Paint & Finish", desc: "Interiors with smooth plaster and wall putty. Exteriors with double coat and water-resistant paint." },
+    { icon: FaBath, title: "Bathrooms & Toilets", desc: "Designer bathrooms with premium tiles up to lintel level. Branded premium bath fittings, plumbing fixtures, and vessels." },
+    { icon: FaFaucet, title: "Plumbing", desc: "Standard concealed UPVC and XPVC pipes ensuring long-term durability." },
+    { icon: FaThLarge, title: "Flooring", desc: "High-grade nano-finish tiles flooring for inside areas with skirting." },
+    { icon: FaBolt, title: "Electrifications", desc: "Electrical infrastructure shall be provided up to the unit. Individual meter connection. Concealed wiring and internal electrification shall be borne by the purchaser." }
   ];
 
   useEffect(() => {
@@ -38,27 +35,27 @@ const Amenities = () => {
             data-aos="fade-up" 
             className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-bold font-primary mb-4"
           >
-            PREMIUM AMENITIES
+            SPECIFICATIONS
           </h3>
           <h2 
             data-aos="fade-up" 
             data-aos-delay="100"
             className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 font-primary"
           >
-            World-Class Facilities
+            Quality & Craftsmanship
           </h2>
           <p 
             data-aos="fade-up" 
             data-aos-delay="200"
             className="text-gray-600 text-lg font-secondary"
           >
-            Experience luxury and convenience with our carefully curated amenities designed for modern businesses
+            Designed with precision and built with the highest standards to ensure excellence in every aspect.
           </p>
         </div>
 
-        {/* Amenities Grid */}
+        {/* Specifications Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {amenities.map((item, index) => (
+          {specifications.map((item, index) => (
             <div
               key={index}
               data-aos="fade-up"
@@ -93,4 +90,4 @@ const Amenities = () => {
   );
 };
 
-export default Amenities;
+export default Specifications;

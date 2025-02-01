@@ -33,11 +33,11 @@ const Header = () => {
         />
       </div>
 
-      <ul className="lg:flex justify-center items-center gap-x-1 hidden">
+      <ul className="lg:flex justify-center items-center gap-x-0 hidden">
         {navItems.map(({ link, path }) => (
           <li key={path}>
             <Link
-              className="text-black text-[15px] uppercase font-semibold cursor-pointer px-3 py-3 rounded-lg hover:bg-primary hover:text-white"
+              className="text-black text-[15px] uppercase font-semibold cursor-pointer px-2 py-3 rounded-lg hover:bg-primary hover:text-white"
               to={path}
               spy={true}
               offset={-100}
@@ -81,11 +81,11 @@ const Header = () => {
         </div>
       )}
 
-      <div className="flex justify-center items-center lg:gap-8 gap-2">
-        <div className="flex justify-center items-center lg:gap-3 gap-1">
-          <FaPhoneAlt className="size-5 text-red-600" />
+      <div className="flex justify-center items-center lg:gap-4 gap-2">
+        <div className="flex justify-center items-center lg:gap-1 gap-1">
+          <FaPhoneAlt className="size-4 text-primary" />
           <h1 className="lg:text-xl text-sm text-black font-semibold">
-            +91 789456123
+            +91 9909019620 | +91 9909019621
           </h1>
         </div>        
       </div>

@@ -14,7 +14,7 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="relative py-24 overflow-hidden bg-gray-50/30">
+    <section id="about" className="relative py-24 overflow-hidden bg-white">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-primary/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl" />
