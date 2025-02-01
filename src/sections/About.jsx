@@ -29,7 +29,7 @@ const About = () => {
             
               <img
                 src={aboutimg}
-                alt="About Reva LandMarks"
+                alt="About Reva LandMark"
                 className="w-auto h-full object-fill rounded-xl transform transition-all duration-700 hover:scale-105"
               />
 
@@ -54,7 +54,7 @@ const About = () => {
                 WHO WE ARE
               </span>
               <h2 className="mt-6 text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                Reva LandMarks
+                Reva LandMark
                 <span className="block text-2xl text-gray-600 mt-4 font-medium">
                   Building Dreams Since 2008
                 </span>

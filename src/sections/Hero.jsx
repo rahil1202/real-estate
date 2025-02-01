@@ -6,9 +6,9 @@ import image3 from "../assets/images/buildings/03.jpg";
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    { src: image1, text: "Find your next Home" },
-    { src: image2 , text: "Luxury Apartments Available Now" },
-    { src: image3, text: "Experience Modern Living" }
+    { src: image1, text: "Find your next Premium 2 Layer Shops & Showrooms" },
+    { src: image2 , text: "Luxury Commercial Spaces with Premium Brands Onboard (SubWay, Koa Caf, and more..)" },
+    { src: image3, text: "Commercial Property at 75 Mtr Highly Developing Road of New Vadodara" }
   ];
 
 
@@ -40,12 +40,9 @@ const Hero = () => {
             data-aos="fade-left"
             className="bg-black/70 backdrop-blur-sm p-8 rounded-2xl text-white transform hover:scale-[1.02] transition-all duration-300"
           >
-            <h1 className="text-4xl lg:text-4xl font-semibold font-primary lg:leading-[1.2] mb-4">
+            <h1 className="text-3xl lg:text-3xl font-semibold font-primary lg:leading-[1.2] mb-3">
               {images[currentIndex].text}
-            </h1>
-            <p className="text-gray-200 text-lg">
-              Discover your perfect space in the heart of luxury
-            </p>
+            </h1>           
           </div>
         </div>
 
