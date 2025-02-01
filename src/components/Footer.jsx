@@ -13,9 +13,9 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-gradient-to-b from-primary/5 to-primary/10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 pt-8 pb-2">
           {/* Main Footer Content */}
-          <div className="grid lg:grid-cols-3 gap-16">
+          <div className="grid lg:grid-cols-3 gap-6">
             {/* Company Info */}
             <div className="space-y-6">
               <img
@@ -24,7 +24,7 @@ const Footer = () => {
                 className="w-[180px] transform hover:scale-105 transition-all duration-300"
               />
               <p className="text-gray-600 leading-relaxed font-secondary">
-               We began in 1998 with a vision of providing sophistication and established a milestone with a REVA group in 2019. At Reva Group, we offer a variety of unique living areas for your completely joyful lifestyle. In addition to providing satisfaction and tranquillity, we provide ultramodern comforts and a lifestyle that appeals to the most discerning tastes. Providing comprehensive residential project expertise is what we do.
+                At Reva Group, we offer a variety of unique living areas for your completely joyful lifestyle. In addition to providing satisfaction and tranquillity, we provide ultramodern comforts and a lifestyle that appeals to the most discerning tastes. Providing comprehensive residential project expertise is what we do.
               </p>
 
               {/* Social Icons */}
@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
 
             {/* Contact Information */}
-            <div className="space-y-6">
+            <div className="space-y-2">
               <h3 className="text-2xl font-bold text-gray-900 font-secondary">Contact Us</h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
@@ -82,7 +82,7 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <div className="mt-16 pt-8 border-t border-gray-200 text-center">
+          <div className="-mt-8 pt-0 border-t border-gray-200 text-center">
             <p className="text-gray-600 font-semibold font-secondary">
               Copyright &copy; {new Date().getFullYear()} Reva Group, All Rights Reserved.
             </p>

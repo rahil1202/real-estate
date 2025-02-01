@@ -43,9 +43,9 @@ const Plans = () => {
         {/* Stats Section with Enhanced Design */}
         <div className="w-full grid lg:grid-cols-3 grid-cols-1 gap-10 bg-primary/10 rounded-2xl p-12 shadow-md">
           {[ 
-            { number: "100+", text: "Unique Designs" },
-            { number: "500+", text: "Custom Plans" },
-            { number: "100+", text: "Completed Projects" }
+            { number: "52", text: "Units" },
+            { number: "652", text: "Sq.Ft Starting Area/Unit" },
+            { number: "8%", text: "ROI" }
           ].map((stat, index) => (
             <div 
               key={index}

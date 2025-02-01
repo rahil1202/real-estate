@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import image1 from "../assets/images/buildings/01.jpg";
+import image1 from "../assets/images/buildings/01.png";
 import image2 from "../assets/images/buildings/02.png";
 import image3 from "../assets/images/buildings/03.jpg";
-import image4 from "../assets/images/buildings/04.jpg";
+// import image4 from "../assets/images/buildings/04.jpg";
 
 const Hero = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -10,7 +10,7 @@ const Hero = () => {
     { src: image1, text: "Find your next Premium 2 Layer Shops & Showrooms" },
     { src: image2 , text: "Luxury Commercial Spaces with Premium Brands" },
     { src: image3, text: "Commercial Property at 75 Mtr Highly Developing Road of New Vadodara" },
-    { src: image4, text: "Invest In commercial Property & Get 8% ROI" }
+    // { src: image4, text: "Invest In commercial Property & Get 8% ROI" }
   ];
 
 
