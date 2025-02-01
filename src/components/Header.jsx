@@ -37,7 +37,7 @@ const Header = () => {
         {navItems.map(({ link, path }) => (
           <li key={path}>
             <Link
-              className="text-black text-[15px] uppercase font-semibold cursor-pointer px-3 py-3 rounded-lg hover:bg-red-600 hover:text-white"
+              className="text-black text-[15px] uppercase font-semibold cursor-pointer px-3 py-3 rounded-lg hover:bg-primary hover:text-white"
               to={path}
               spy={true}
               offset={-100}
@@ -71,7 +71,7 @@ const Header = () => {
                   spy={true}
                   offset={-100}
                   smooth={true}
-                  className="text-white uppercase font-semibold cursor-pointer p-3 rounded-lg hover:bg-red-600 hover:text-black w-full text-center"
+                  className="text-white uppercase font-semibold cursor-pointer p-3 rounded-lg hover:bg-primary first-letter:hover:text-black w-full text-center"
                 >
                   {link}
                 </Link>

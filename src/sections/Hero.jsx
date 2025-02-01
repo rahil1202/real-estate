@@ -1,113 +1,130 @@
-import  { useEffect } from "react";
-import heroimg from "../assets/images/hero1.webp";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { useState, useEffect } from "react";
+import image1 from "../assets/images/buildings/01.png";
+import image2 from "../assets/images/buildings/02.png";
+import image3 from "../assets/images/buildings/03.jpg";
 
 const Hero = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const images = [
+    { src: image1, text: "Find your next Home" },
+    { src: image2 , text: "Luxury Apartments Available Now" },
+    { src: image3, text: "Experience Modern Living" }
+  ];
+
+
   useEffect(() => {
-    AOS.init({
-      offset: 200,
-      duration: 800,
-      easing: "ease-in-sine",
-      delay: 100,
-    });
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
   }, []);
 
-  
-
   return (
-    <>
-      <div className={` "bg-white"}`}>
-        <section
-          id="hero"
-          className={`w-[95%] h-[600px] m-auto bg-cover bg-center rounded-xl flex justify-center flex-col items-center lg:px-28 px-10 gap-7 z-20`}
-          style={{ backgroundImage: `url(${heroimg})`, backgroundSize: 'cover' }}
-          aria-label="Hero background image"
-        >
-          <h1
-            data-aos="zoom-in"
-            className="text-6xl text-white font-semibold lg:pr-[500px] pr-0 lg:leading-[70px] leading-[60px]"
+    <div className="relative bg-white">
+      {/* Hero Section */}
+      <section
+        id="hero"
+        className="w-[95%] h-[650px] mx-auto bg-fill bg-center rounded-2xl overflow-hidden relative transition-all duration-1000 ease-in-out "
+        style={{
+          backgroundImage: `url(${images[currentIndex].src})`,
+          backgroundSize: "cover",
+        }}
+        aria-label="Hero background image"
+      >
+        {/* Gradient Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30"/>
+
+        {/* Hero Content */}
+        <div className="absolute bottom-0 right-0 p-8 lg:p-16 max-w-2xl">
+          <div 
+            data-aos="fade-left"
+            className="bg-black/70 backdrop-blur-sm p-8 rounded-2xl text-white transform hover:scale-[1.02] transition-all duration-300"
           >
-            Find your next Home in Las Vegas
-          </h1>
-          <p
-            data-aos="zoom-in"
-            className="text-white text-xl lg:pr-[500px] pr-0"
-          >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-            quaerat ab inventore voluptatum illum, dolores animi eum harum
-            obcaecati? Mollitia.
-          </p>
-        </section>
-      </div>
-
-      {/* Form Starts here */}
-      <div className={` "bg-transparent" z-10`}>
-        <div
-          data-aos="zoom-in"
-          id="form"
-          className={`${
-            "bg-white"
-          } lg:w-[70%] w-full m-auto grid lg:grid-cols-4 grid-cols-1 justify-center items-center gap-6 p-8 rounded-xl -mt-14`}
-        >
-          <div className="w-full">
-            <h1 className="text-black font-semibold ">
-              Location
+            <h1 className="text-4xl lg:text-4xl font-semibold font-primary lg:leading-[1.2] mb-4">
+              {images[currentIndex].text}
             </h1>
-            <input
-              type="text"
-              placeholder="Enter an address, state, city or pincode"
-              className="bg-white p-2 w-full mt-2 border-b-[1px] border-[#c9c7c1]"
-            />
+            <p className="text-gray-200 text-lg">
+              Discover your perfect space in the heart of luxury
+            </p>
           </div>
-          <div className="w-full">
-            <h1 className="text-black font-semibold ">Type</h1>
-            <select
-              name="selectOption"
-              id="selectOption"
-              className="bg-white p-2 border-b-[1px] w-full mt-2 border-[#c9c7c1] text-gray-500 text-md"
-              defaultValue=""
-            >
-              <option value="" disabled>
-                Select property
-              </option>
-              <option value="rentals">Rentals</option>
-              <option value="sales">Sales</option>
-              <option value="commercials">Commercials</option>
-            </select>
-          </div>
+        </div>
 
-          <div className="w-full">
-            <h1 className="text-black font-semibold ">
-              Category
-            </h1>
-            <select
-              name="selectOption"
-              id="selectOption"
-              className="bg-white p-2 border-b-[1px] w-full mt-2 border-[#c9c7c1] text-gray-500 text-md"
-              defaultValue=""
-            >
-              <option value="" disabled>
-                Property category
-              </option>
-              <option value="apartments">Apartments</option>
-              <option value="duplex">Duplex</option>
-              <option value="2bhk">2BHK</option>
-              <option value="3bhk">3BHK</option>
-              <option value="private-villa">Private Villa</option>
-            </select>
-          </div>
-
-          <div className="w-full">
+        {/* Image Navigation Dots */}
+        <div className="absolute bottom-6 left-6 flex gap-2">
+          {images.map((_, idx) => (
             <button
-              className="bg-red-600  hover:bg-black text-lg p-4 w-full text-white font-semibold rounded-xl cursor-pointer transform hover:scale-110 transition-transform duration-300"
-            >
-              SUBMIT
-            </button>
+              key={idx}
+              onClick={() => setCurrentIndex(idx)}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                currentIndex === idx ? 'bg-white scale-125' : 'bg-white/50'
+              }`}
+              aria-label={`Go to slide ${idx + 1}`}
+            />
+          ))}
+        </div>
+      </section>
+
+      {/* Search Form */}
+      <div className="relative z-20 w-[95%] mx-auto px-4">
+        <div          
+          className="bg-white lg:w-[80%] w-full mx-auto mt-[-30px] rounded-2xl shadow-2xl overflow-hidden"
+        >
+          <div className="grid lg:grid-cols-4 grid-cols-1 divide-x divide-gray-100">
+            {/* Name Input */}
+            <div className="p-6 hover:bg-gray-50 transition-colors duration-300">
+              <label className="block text-gray-800 font-semibold mb-2 text-sm">
+                Name*
+              </label>
+              <input
+                type="text"
+                placeholder="Enter your Name"
+                className="w-full bg-transparent text-gray-600 placeholder-gray-400 focus:outline-none focus:border-primary border-b-2 border-gray-200 p-2 transition-all duration-300"
+                required
+              />
+            </div>
+            {/* Phone Input */}
+            <div className="p-6 hover:bg-gray-50 transition-colors duration-300">
+              <label className="block text-gray-800 font-semibold mb-2 text-sm">
+                Phone*
+              </label>
+              <input
+                type="tel"
+                placeholder="Enter your Phone"
+                className="w-full bg-transparent text-gray-600 placeholder-gray-400 focus:outline-none focus:border-primary border-b-2 border-gray-200 p-2 transition-all duration-300"
+                required
+              />
+            </div>
+
+            {/* Property Type */}
+            <div className="p-6 hover:bg-gray-50 transition-colors duration-300">
+              <label className="block text-gray-800 font-semibold mb-2 text-sm">
+                Property Type*
+              </label>
+              <select
+                className="w-full bg-transparent text-gray-600 focus:outline-none focus:border-primary border-b-2 border-gray-200 p-2 transition-all duration-300"
+                defaultValue=""
+                required
+              >
+                <option value="" disabled>Select property type</option>
+                <option value="rentals">Rentals</option>
+                <option value="sales">Sales</option>
+                <option value="commercials">Commercial</option>
+              </select>
+            </div>
+
+            {/* Submit Button */}
+            <div className="p-6 flex items-center justify-center bg-white lg:col-span-1 col-span-4">
+              <button
+                className="w-full bg-primary hover:bg-primary/90 text-white font-semibold font-secondary py-4 px-8 rounded-xl 
+                transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              >
+                Submit
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
