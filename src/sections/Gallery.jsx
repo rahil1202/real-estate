@@ -21,7 +21,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <section className="relative py-24 overflow-hidden bg-gray-50">
+    <section className="relative py-24 overflow-hidden bg-gray-50" id="gallery">
       <div className="container mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-20">
