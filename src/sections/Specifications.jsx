@@ -23,7 +23,7 @@ const Specifications = () => {
   }, []);
 
   return (
-    <section className="relative py-24 overflow-hidden bg-gray-50">
+    <section className="relative py-24 overflow-hidden bg-white" id="specifications">
       {/* Background Decorations */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl" />
