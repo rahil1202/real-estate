@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="absolute bottom-0 right-0 p-8 lg:p-16 max-w-2xl">
           <div 
             data-aos="fade-left"
-            className="bg-black/70 backdrop-blur-sm p-8 rounded-2xl text-white transform hover:scale-[1.02] transition-all duration-300"
+            className="bg-black/70 backdrop-blur-sm p-8 rounded-2xl text-white transform hover:scale-[1.02] transition-all duration-200"
           >
             <h1 className="text-3xl lg:text-3xl font-semibold font-primary lg:leading-[1.2] mb-3">
               {images[currentIndex].text}
@@ -54,7 +54,7 @@ const Hero = () => {
             <button
               key={idx}
               onClick={() => setCurrentIndex(idx)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+              className={`w-3 h-3 rounded-full transition-all duration-200 ${
                 currentIndex === idx ? 'bg-white scale-125' : 'bg-white/50'
               }`}
               aria-label={`Go to slide ${idx + 1}`}
