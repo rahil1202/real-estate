@@ -64,8 +64,7 @@ const Testimonials = () => {
           {reviews.map((review, index) => (
             <div
               key={index}
-              data-aos="fade-up"
-              data-aos-delay={100 * index}
+              data-aos="fade-up"             
               className="group bg-white p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-primary hover:border-primary/80"
             >
               <div className="flex items-start gap-6">

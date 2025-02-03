@@ -8,8 +8,7 @@ const About = () => {
     AOS.init({
       offset: 200,
       duration: 400,
-      easing: "ease-in-sine",
-      delay: 100,
+      easing: "ease-in-sine",     
     });
   }, []);
 
@@ -30,13 +29,13 @@ const About = () => {
               <img
                 src={aboutimg}
                 alt="About Reva LandMark"
-                className="w-auto h-full object-fill rounded-xl transform transition-all duration-700 hover:scale-105"
+                className="w-auto h-full object-fill rounded-xl transform transition-all duration-100 hover:scale-105"
               />
 
             {/* Experience Badge */}
             <div
               data-aos="fade-up"
-              data-aos-delay="200"
+              data-aos-delay="100"
               className="absolute bottom-12 -right-8 bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition-all duration-300 cursor-pointer"
             >
               <div className="text-center">
@@ -64,7 +63,7 @@ const About = () => {
             {/* Description & Features */}
             <div 
               data-aos="fade-left" 
-              data-aos-delay="200"
+              data-aos-delay="100"
               className="space-y-8"
             >
               <p className="text-gray-600 text-lg leading-relaxed font-secondary">
@@ -79,11 +78,10 @@ const About = () => {
                   { title: 'Total Projects', count: '11' },                  
                   { title: 'Commercial Units', count: '445' },
                   { title: 'Customer Focus', count: '7875' }
-                ].map((feature, index) => (
+                ].map((feature) => (
                   <div 
                     key={feature.title}
-                    data-aos="fade-up"
-                    data-aos-delay={300 + (index * 100)}
+                    data-aos="fade-up"                    
                     className="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
                   >
                     <div className="text-primary font-bold text-xl mb-1">{feature.count}</div>

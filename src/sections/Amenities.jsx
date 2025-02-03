@@ -20,8 +20,7 @@ const Amenities = () => {
     AOS.init({
       offset: 200,
       duration: 400,
-      easing: "ease-in-sine",
-      delay: 100,
+      easing: "ease-in-sine",     
     });
   }, []);
 
@@ -49,7 +48,7 @@ const Amenities = () => {
           </h2>
           <p 
             data-aos="fade-up" 
-            data-aos-delay="200"
+            data-aos-delay="100"
             className="text-black text-m font-secondary"
           >
             Experience luxury and convenience with our curated amenities designed for modern businesses
@@ -61,8 +60,7 @@ const Amenities = () => {
           {amenities.map((item, index) => (
             <div
               key={index}
-              data-aos="fade-up"
-              data-aos-delay={100 * index}
+              data-aos="fade-up"            
               className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300
                 transform hover:-translate-y-2 border-b-4 border-primary hover:border-primary/80"
             >

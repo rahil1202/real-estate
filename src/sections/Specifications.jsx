@@ -16,9 +16,8 @@ const Specifications = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 400,
-      easing: "ease-in-sine",
-      delay: 100,
+      duration: 300,
+      easing: "ease-in-sine",      
     });
   }, []);
 
@@ -38,15 +37,13 @@ const Specifications = () => {
             SPECIFICATIONS
           </h3>
           <h2 
-            data-aos="fade-up" 
-            data-aos-delay="100"
+            data-aos="fade-up"             
             className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 font-primary"
           >
             Quality & Craftsmanship
           </h2>
           <p 
-            data-aos="fade-up" 
-            data-aos-delay="200"
+            data-aos="fade-up"            
             className="text-gray-600 text-lg font-secondary"
           >
             Designed and built with the highest standards to ensure excellence in every aspect.
@@ -58,8 +55,7 @@ const Specifications = () => {
           {specifications.map((item, index) => (
             <div
               key={index}
-              data-aos="fade-up"
-              data-aos-delay={100 * index}
+              data-aos="fade-up"             
               className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300
                 transform hover:-translate-y-2 border-b-4 border-primary hover:border-primary/80"
             >

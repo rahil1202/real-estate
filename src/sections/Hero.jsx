@@ -94,20 +94,20 @@ const Hero = () => {
               />
             </div>
 
-            {/* Property Type */}
+            {/* Type */}
             <div className="p-6 hover:bg-gray-50 transition-colors duration-300">
               <label className="block text-gray-800 font-semibold mb-2 text-sm">
-                Property Type*
+                Type*
               </label>
               <select
                 className="w-full bg-transparent text-gray-600 focus:outline-none focus:border-primary border-b-2 border-gray-200 p-2 transition-all duration-300"
                 defaultValue=""
                 required
               >
-                <option value="" disabled>Select property type</option>
-                <option value="rentals">Rentals</option>
-                <option value="sales">Sales</option>
-                <option value="commercials">Commercial</option>
+                <option value="" disabled>Select type</option>
+                <option value="rentals">Investment</option>
+                <option value="sales">Franchise</option>
+                <option value="commercials">Business</option>
               </select>
             </div>
 
