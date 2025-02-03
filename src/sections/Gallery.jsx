@@ -14,17 +14,17 @@ const Gallery = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 800,
+      duration: 500,
       easing: "ease-in-sine",
       delay: 100,
     });
   }, []);
 
   return (
-    <section className="relative py-24 overflow-hidden bg-white" id="gallery">
+    <section className="relative pt-20 pb-8 overflow-hidden bg-white" id="gallery">
       <div className="container mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-2xl mx-auto text-center mb-20">
+        <div className="max-w-2xl mx-auto text-center mb-8">
           <h3 
             data-aos="fade-up" 
             className="inline-block px-6 py-3 bg-primary/10 rounded-full text-primary font-semibold uppercase tracking-wider"
@@ -41,7 +41,7 @@ const Gallery = () => {
           <p 
             data-aos="fade-up" 
             data-aos-delay="200"
-            className="text-gray-600 text-lg"
+            className="text-gray-600 text-l"
           >
             Discover the beauty and craftsmanship of our latest developments through our curated gallery.
           </p>

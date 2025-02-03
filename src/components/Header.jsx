@@ -13,8 +13,8 @@ const Header = () => {
   const navItems = [
     { link: "Home", path: "home" },
     { link: "About", path: "about" },
-    { link: "Amenities", path: "amenities" },
     { link: "Gallery", path: "gallery" },
+    { link: "Amenities", path: "amenities" },
     { link: "Testimonials", path: "testimonials" },
     { link: "Contact", path: "contact" },
   ];
@@ -84,14 +84,9 @@ const Header = () => {
       <div className="flex justify-center items-center lg:gap-4 gap-2">
         <div className="flex justify-center items-center lg:gap-1 gap-1">
           <FaPhoneAlt className="size-4 text-primary" />
-          <h1 className="lg:text-xl text-sm text-black font-semibold">
-            <a href= "tel:+91 9909019620" className="hover:underline">
-            +91 9909019620 |
-            </a>
-          </h1>
-          <h1 className="lg:text-xl text-sm text-black font-semibold">
-            <a href = "tel:+91 9909021510"  className="hover:underline">
-            +91 9909021510
+           <h1 className="lg:text-xl text-sm text-black font-semibold">
+            <a href="tel:+917490055774" className="transition-colors duration-300 hover:text-primary hover:underline">
+            +91 74900 55774 
             </a>
           </h1>
         </div>        

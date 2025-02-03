@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg-gradient-to-b from-primary/10 to-primary/20">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8 pt-8 pb-2">
+        <div className="max-w-6xl mx-auto px-2 lg:px-2 pt-8 pb-2">
           {/* Main Footer Content */}
           <div className="grid lg:grid-cols-3 gap-6">
             {/* Company Info */}
@@ -48,16 +48,8 @@ const Footer = () => {
                 <div className="flex items-center gap-3">
                   <FaPhoneAlt className="w-4 h-4 text-primary" />
                   <p className="text-black font-secondary">
-                    <a href="tel:+919909024510" className="hover:underline">
-                      +91 9909024510
-                    </a>
-                  </p>
-                </div>
-                <div className="flex items-center gap-3">
-                  <FaPhoneAlt className="w-4 h-4 text-primary" />
-                  <p className="text-black font-secondary">
-                    <a href="tel:+919909021510" className="hover:underline">
-                      +91 9909021510
+                    <a href="tel:+917490055774 " className="hover:underline">
+                      +91 74900 55774 
                     </a>
                   </p>
                 </div>

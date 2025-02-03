@@ -16,21 +16,21 @@ const Specifications = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 800,
+      duration: 400,
       easing: "ease-in-sine",
       delay: 100,
     });
   }, []);
 
   return (
-    <section className="relative py-24 overflow-hidden bg-white" id="specifications">
+    <section className="relative  pt-20 pb-8 overflow-hidden bg-white" id="specifications">
       {/* Background Decorations */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-primary/5 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl" />
 
       <div className="container mx-auto px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-2xl mx-auto text-center mb-20">
+        <div className="max-w-2xl mx-auto text-center mb-8">
           <h3 
             data-aos="fade-up" 
             className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-bold font-primary mb-4"
@@ -49,7 +49,7 @@ const Specifications = () => {
             data-aos-delay="200"
             className="text-gray-600 text-lg font-secondary"
           >
-            Designed with precision and built with the highest standards to ensure excellence in every aspect.
+            Designed and built with the highest standards to ensure excellence in every aspect.
           </p>
         </div>
 

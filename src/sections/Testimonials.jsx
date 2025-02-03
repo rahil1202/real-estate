@@ -33,7 +33,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="relative py-24 overflow-hidden bg-white">
+    <section className="relative  pt-16 pb-4 overflow-hidden bg-white" id="testimonials">
       <div className="container mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-2xl mx-auto text-center mb-20">

@@ -7,7 +7,7 @@ const About = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 800,
+      duration: 400,
       easing: "ease-in-sine",
       delay: 100,
     });

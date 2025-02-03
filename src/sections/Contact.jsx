@@ -8,7 +8,7 @@ const Contact = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 800,
+      duration: 400,
       easing: "ease-in-sine",
       delay: 100,
     });
@@ -97,7 +97,7 @@ const Contact = () => {
         </div>
         {/* Google Map - Full Width Below */}
        {/* Google Map - Improved Visual Appeal */}
-<div className="w-full mt-10 relative flex flex-col items-center">
+<div className="w-full mt-8 relative flex flex-col items-center">
   <div className="text-center mb-6">
     <span className="text-primary font-semibold text-sm uppercase tracking-wider bg-red-50 px-4 py-2 rounded-full">
       Locate Us
