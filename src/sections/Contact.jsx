@@ -95,6 +95,35 @@ const Contact = () => {
             </div>
           </div>
         </div>
+        {/* Google Map - Full Width Below */}
+       {/* Google Map - Improved Visual Appeal */}
+<div className="w-full mt-10 relative flex flex-col items-center">
+  <div className="text-center mb-6">
+    <span className="text-primary font-semibold text-sm uppercase tracking-wider bg-red-50 px-4 py-2 rounded-full">
+      Locate Us
+    </span>
+    <h3 className="text-3xl font-bold text-gray-900 mt-3">
+      Find Us on the Map
+    </h3>
+    <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
+      Easily locate our office and visit us anytime. We are here to assist you in turning your dreams into reality.
+    </p>
+  </div>
+
+  <div className="relative w-full max-w-5xl h-[450px] overflow-hidden rounded-2xl shadow-xl">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14762.326569122753!2d73.2563404!3d22.3316565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcfe959bae6ab%3A0x50ae03307fecac3e!2sREVA%20CLUBLIFE!5e0!3m2!1sen!2sin!4v1738565370100!5m2!1sen!2sin"
+      width="100%"
+      height="100%"
+      allowFullScreen=""
+      loading="lazy"
+      referrerPolicy="no-referrer-when-downgrade"
+      className="absolute inset-0 w-full h-full rounded-2xl transition-transform duration-300 hover:scale-105"
+    ></iframe>
+  </div>
+</div>
+
+
       </section>
     </div>
   );

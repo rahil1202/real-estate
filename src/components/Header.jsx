@@ -85,7 +85,14 @@ const Header = () => {
         <div className="flex justify-center items-center lg:gap-1 gap-1">
           <FaPhoneAlt className="size-4 text-primary" />
           <h1 className="lg:text-xl text-sm text-black font-semibold">
-            +91 9909019620 | +91 9909021510
+            <a href= "tel:+91 9909019620" className="hover:underline">
+            +91 9909019620 |
+            </a>
+          </h1>
+          <h1 className="lg:text-xl text-sm text-black font-semibold">
+            <a href = "tel:+91 9909021510"  className="hover:underline">
+            +91 9909021510
+            </a>
           </h1>
         </div>        
       </div>

@@ -1,7 +1,14 @@
 {
-  "name": "real-estate",
+  "name": "reva-landmark",
+  "author": {
+    "name": "The One Branding",
+    "email": "info@theonebranding.com",
+    "url": "https://theonebranding.com"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/theonebranding/reva-landmark",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,6 +17,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-google-maps/api": "^2.20.5",
     "aos": "^2.3.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

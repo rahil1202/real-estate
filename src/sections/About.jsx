@@ -75,10 +75,10 @@ const About = () => {
               {/* Features Grid */}
               <div className="grid grid-cols-2 gap-8">
                 {[
-                  { title: 'Residential Units', count: '1200' },
-                  { title: 'Total Projects', count: '30' },                  
-                  { title: 'Commercial Units', count: '2000' },
-                  { title: 'Customer Focus', count: '3500+' }
+                  { title: 'Residential Units', count: '430' },
+                  { title: 'Total Projects', count: '11' },                  
+                  { title: 'Commercial Units', count: '445' },
+                  { title: 'Customer Focus', count: '7875' }
                 ].map((feature, index) => (
                   <div 
                     key={feature.title}
