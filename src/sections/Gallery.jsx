@@ -34,7 +34,7 @@ const Gallery = () => {
           <h2 
             data-aos="fade-up" 
             data-aos-delay="100"
-            className="text-4xl lg:text-5xl font-extrabold text-gray-900 mb-6"
+            className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6"
           >
             Explore Our Projects
           </h2>

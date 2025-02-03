@@ -14,6 +14,12 @@ const Testimonials = () => {
       name: "Bharati",
       unit: "Reva Duplex Client - Unit 43",
       feedback: "Ankhol is a developing area with schools, temples, hospitals, and colleges all in the vicinity. Reva Duplex is easily accessible from the National Highway, providing great connectivity options. There are a lot of upcoming commercial complexes. Reva Duplex offered us luxurious flats at a very reasonable price and is best suited for investment purposes. One of my friends suggested I invest in this project, and I found it to be a great property investment. I am thinking of buying another one for my brother."
+    },
+    {
+      name: "Deepak Sarang",
+      unit: "Showroom no. 35",
+      feedback: "Reva landmark is a unique and prominent commercial development featuring double-height showrooms. The elevation looks premium, combined with mid-mezzanine design, enhances both aesthetics and functionality. It is going to become a vibrant shopping centre for both fashion and food in the coming years on ajwa stretch The parking space on the front shall add to people convenience.Overall a great investment to make."  
+
     }
   ];
 
@@ -54,7 +60,7 @@ const Testimonials = () => {
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
           {reviews.map((review, index) => (
             <div
               key={index}
@@ -70,7 +76,7 @@ const Testimonials = () => {
                 {/* Content */}
                 <div>
                   <p className="text-gray-600 italic">“{review.feedback}”</p>
-                  <h3 className="text-lg font-bold text-gray-900 mt-4">{review.name}</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mt-2">{review.name}</h3>
                   <p className="text-primary text-sm">{review.unit}</p>
                   <div className="flex gap-1 mt-2">
                     {[...Array(5)].map((_, i) => (
