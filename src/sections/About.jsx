@@ -21,17 +21,14 @@ const About = () => {
       <div className="container mx-auto px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image Section */}
-          <div className="relative group" data-aos="fade-right">
-           
+          <div className="relative group">          
             
-            {/* Main Image Container */}
-            
+            {/* Main Image Container */}            
               <img
                 src={aboutimg}
                 alt="About Reva LandMark"
                 className="w-auto h-full object-fill rounded-xl transform transition-all duration-100 hover:scale-105"
               />
-
             {/* Experience Badge */}
             <div
               data-aos="fade-up"
@@ -53,7 +50,7 @@ const About = () => {
                 WHO WE ARE
               </span>
               <h2 className="mt-6 text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                Reva LandMark
+                Reva Landmark
                 <span className="block text-2xl text-gray-600 mt-4 font-medium">
                   Building Dreams Since 1998
                 </span>
@@ -67,8 +64,7 @@ const About = () => {
               className="space-y-8"
             >
               <p className="text-gray-600 text-lg leading-relaxed font-secondary">
-               We began in 1998 with a vision of providing sophistication and established a milestone with a REVA group in 2019. At Reva Group, we offer a variety of unique living areas for your completely joyful lifestyle. In addition to providing satisfaction and tranquillity, we provide ultramodern comforts and a lifestyle that appeals to the most discerning tastes. Providing comprehensive residential project expertise is what we do.
-
+               We began in 1998 with a vision of providing sophistication and established a milestone with a REVA group in 2019. At Reva Group, we are setting a new landmark for retail and commercial place. We have a vision of creating an environment that is both functional and unique.
               </p>
 
               {/* Features Grid */}
@@ -77,12 +73,12 @@ const About = () => {
                   { title: 'Residential Units', count: '430' },
                   { title: 'Total Projects', count: '11' },                  
                   { title: 'Commercial Units', count: '445' },
-                  { title: 'Customer Focus', count: '7875' }
+                  { title: 'Customer Focus', count: '875' }
                 ].map((feature) => (
                   <div 
                     key={feature.title}
                     data-aos="fade-up"                    
-                    className="bg-white p-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                    className="bg-white p-4 rounded-xl border-2 border-primary/80 shadow-sm hover:shadow-md transition-shadow duration-200"
                   >
                     <div className="text-primary font-bold text-xl mb-1">{feature.count}</div>
                     <div className="text-gray-700 font-medium">{feature.title}</div>

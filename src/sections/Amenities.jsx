@@ -19,7 +19,7 @@ const Amenities = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 400,
+      duration: 200,
       easing: "ease-in-sine",     
     });
   }, []);
@@ -37,7 +37,7 @@ const Amenities = () => {
             data-aos="fade-up" 
             className="inline-block px-4 py-2 bg-primary/10 rounded-full text-primary font-bold font-primary mb-4"
           >
-            PREMIUM AMENITIES
+            PREMIUM FEATURES
           </h3>
           <h2 
             data-aos="fade-up" 

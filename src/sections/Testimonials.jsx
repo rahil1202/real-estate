@@ -4,17 +4,7 @@ import "aos/dist/aos.css";
 import { FaQuoteLeft, FaStar } from "react-icons/fa";
 
 const Testimonials = () => {
-  const reviews = [
-    {
-      name: "Bhavin Prajapati",
-      unit: "Reva Duplex Client - Unit 18",
-      feedback: "Reva Duplex provides homes that are of good quality, modern design, and value for money. It has good amenities like the landscape garden, Gazebo, clubhouse, and camera-equipped security solution. Also, the location of the project is developing rapidly. The builder and staff are helpful, cooperative, and provide satisfactory service."
-    },
-    {
-      name: "Bharati",
-      unit: "Reva Duplex Client - Unit 43",
-      feedback: "Ankhol is a developing area with schools, temples, hospitals, and colleges all in the vicinity. Reva Duplex is easily accessible from the National Highway, providing great connectivity options. There are a lot of upcoming commercial complexes. Reva Duplex offered us luxurious flats at a very reasonable price and is best suited for investment purposes. One of my friends suggested I invest in this project, and I found it to be a great property investment. I am thinking of buying another one for my brother."
-    },
+  const reviews = [    
     {
       name: "Deepak Sarang",
       unit: "Showroom no. 35",

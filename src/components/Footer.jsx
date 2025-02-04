@@ -24,7 +24,7 @@ const Footer = () => {
                 className="w-[180px] transform hover:scale-105 transition-all duration-300"
               />
               <p className="text-black leading-relaxed font-primary">
-                At Reva Group, we offer a variety of unique living areas for your completely joyful lifestyle. In addition to providing satisfaction and tranquillity, we provide ultramodern comforts and a lifestyle that appeals to the most discerning tastes. Providing comprehensive residential project expertise is what we do.
+                At Reva Group, we are setting a new landmark for retail and commercial place. We have a vision of creating an environment that is both functional and unique. 
               </p>
             </div>
 
@@ -82,9 +82,11 @@ const Footer = () => {
                   />
                 </div>
                 <div className="space-y-1">
-                  <h4 className="text-gray-900 font-medium  font-secondary line-clamp-2 cursor-pointer">
-                    Reva Clublife - 2 & 3 BHK Apartments
+                  <a href= "https://revaclublife.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-bold">
+                  <h4 className="text-gray-900 font-semibold  font-secondary line-clamp-2 cursor-pointer">
+                    Reva Clublife - 4 BHK Premium Bungalows
                   </h4>
+                  </a>
                 </div>
               </div>
             </div>
