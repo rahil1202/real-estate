@@ -138,7 +138,7 @@ const Plans = () => {
         >
           <div
             style={{ backgroundImage: `url(${plan1})` }}
-            className="w-full h-[360px] bg-contain bg-no-repeat transform transition-transform duration-300 group-hover:scale-105"
+            className="w-full md:h-[350px] lg:md:h-[400px] h-[250px] bg-contain bg-no-repeat transform transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </div>
