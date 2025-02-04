@@ -8,14 +8,27 @@ const Plans = () => {
     
       <section className="lg:w-[100%] w-full h-fit m-auto bg-white flex justify-center flex-col items-center lg:px-20 px-6 py-4 gap-20">
         {/* Header Section */}
-        <div className="w-full max-w-4xl text-center">
-          <span className="text-primary font-semibold font-primary text-lg uppercase tracking-wider px-6 py-2 bg-primary/10 rounded-full inline-block mb-6">
-            Building Plans
-          </span>
-          <h1 data-aos="zoom-in" className="text-black text-[42px] font-semibold font-secondary leading-tight">
-            Explore Our
-            <span className="text-primary"> Architectural</span> Designs
-          </h1>
+        <div className="max-w-2xl mx-auto text-center -mb-8">
+          <h3 
+            data-aos="fade-up" 
+            className="inline-block px-6 py-3 bg-primary/10 rounded-full text-primary font-semibold uppercase tracking-wider font-primary mb-4"
+          >
+            Architectural Plans
+          </h3>
+          <h2 
+            data-aos="fade-up" 
+            data-aos-delay="100"
+            className="text-4xl lg:text-5xl font-bold font-primary text-black mb-4"
+          >
+            Choose Your Dream Home
+          </h2>
+          <p 
+            data-aos="fade-up" 
+            data-aos-delay="100"
+            className="text-gray-600 text-lg font-secondary"
+          > 
+            Explore our range of architectural plans and choose the one that suits your lifestyle.
+          </p>
         </div>
 
         {/* Full Plan Image with Overlay */}

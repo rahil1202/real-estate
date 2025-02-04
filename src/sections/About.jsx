@@ -7,13 +7,13 @@ const About = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 400,
+      duration: 300,
       easing: "ease-in-sine",     
     });
   }, []);
 
   return (
-    <section id="about" className="relative py-24 overflow-hidden bg-white">
+    <section id="about" className="relative pb-20 pt-12 overflow-hidden bg-white">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-primary/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl" />

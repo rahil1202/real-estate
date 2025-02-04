@@ -8,13 +8,13 @@ const Contact = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 400,
+      duration: 300,
       easing: "ease-in-sine",
     });
   }, []);
 
   return (
-    <div className="bg-white py-20">
+    <div className="bg-white pt-12 pb-8">
       <section className="lg:w-[95%] w-full m-auto" id="contact">
         <div className="bg-gradient-to-r from-primary/10 to-primary/20 rounded-2xl grid lg:grid-cols-2 grid-cols-1 gap-10 overflow-hidden">
           {/* Form Section */}
@@ -105,7 +105,7 @@ const Contact = () => {
       Find Us on the Map
     </h3>
     <p className="text-gray-600 mt-2 max-w-2xl mx-auto">
-      Easily locate our office and visit us anytime. We are here to assist you in turning your dreams into reality.
+      Easily locate our office and visit us anytime. We are here to assist you.
     </p>
   </div>
 
