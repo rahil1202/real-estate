@@ -108,7 +108,7 @@ const Plans = () => {
     <>
       <section className="lg:w-[100%] w-full h-fit m-auto bg-white flex justify-center flex-col items-center lg:px-20 px-6 py-4 gap-20">
         {/* Header Section */}
-        <div className="max-w-2xl mx-auto text-center -mb-8">
+        <div className="max-w-2xl mx-auto text-center -mb-16">
           <h3 
             data-aos="fade-up" 
             className="inline-block px-6 py-3 bg-primary/10 rounded-full text-primary font-semibold uppercase tracking-wider font-primary mb-4"
@@ -138,7 +138,7 @@ const Plans = () => {
         >
           <div
             style={{ backgroundImage: `url(${plan1})` }}
-            className="w-full md:h-[350px] lg:md:h-[400px] h-[250px] bg-contain bg-no-repeat transform transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[450px] bg-contain bg-no-repeat bg-center transform transition-transform duration-300 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </div>

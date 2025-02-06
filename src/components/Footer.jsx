@@ -82,7 +82,7 @@ const Footer = () => {
                   />
                 </div>
                 <div className="space-y-1">
-                  <a href= "https://revaclublife.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-bold">
+                  <a href= "https://reva-clublife.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-bold">
                   <h4 className="text-gray-900 font-semibold  font-secondary line-clamp-2 cursor-pointer">
                     Reva Clublife - 4 BHK Premium Bungalows
                   </h4>

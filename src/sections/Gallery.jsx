@@ -116,7 +116,7 @@ const Gallery = () => {
               data-aos-delay="100"
               className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 font-primary"
             >
-              Explore Reva Landmarks
+              Explore Reva Landmark
             </h2>
             <p 
               data-aos="fade-up" 

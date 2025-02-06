@@ -16,7 +16,7 @@ const Testimonials = () => {
   useEffect(() => {
     AOS.init({
       offset: 200,
-      duration: 800,
+      duration: 200,
       easing: "ease-in-sine",      
     });
   }, []);
@@ -52,8 +52,7 @@ const Testimonials = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-6">
           {reviews.map((review, index) => (
             <div
-              key={index}
-              data-aos="fade-up"             
+              key={index}                          
               className="group bg-white p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-l-4 border-primary hover:border-primary/80"
             >
               <div className="flex items-start gap-6">
