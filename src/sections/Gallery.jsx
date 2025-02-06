@@ -101,7 +101,7 @@ const Gallery = () => {
 
   return (
     <>
-      <section className="relative pt-20 pb-8 overflow-hidden bg-white" id="gallery">
+      <section className="relative pt-12 pb-8 overflow-hidden bg-white" id="gallery">
         <div className="container mx-auto px-6 lg:px-8">
           {/* Section Header */}
           <div className="max-w-2xl mx-auto text-center mb-4">

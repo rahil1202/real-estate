@@ -13,7 +13,7 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about" className="relative pb-20 pt-12 overflow-hidden bg-white">
+    <section id="about" className="relative pb-16 pt-12 overflow-hidden bg-white">
       {/* Decorative Elements */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-primary/5 rounded-full -translate-x-1/2 -translate-y-1/2 blur-3xl" />
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full translate-x-1/2 translate-y-1/2 blur-3xl" />
@@ -51,7 +51,7 @@ const About = () => {
               </span>
               <h2 className="mt-6 text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
                 Reva Landmark
-                <span className="block text-2xl text-gray-600 mt-4 font-medium">
+                <span className="block text-2xl text-gray-600 mt-2 font-medium">
                   Building Dreams Since 1998
                 </span>
               </h2>
@@ -61,9 +61,9 @@ const About = () => {
             <div 
               data-aos="fade-left" 
               data-aos-delay="100"
-              className="space-y-8"
+              className="space-y-5"
             >
-              <p className="text-gray-600 text-lg leading-relaxed font-secondary">
+              <p className="text-gray-600 text-lg leading-relaxed font-secondary -mt-2">
                We began in 1998 with a vision of providing sophistication and established a milestone with a REVA group in 2019. At Reva Group, we are setting a new landmark for retail and commercial place. We have a vision of creating an environment that is both functional and unique.
               </p>
 
