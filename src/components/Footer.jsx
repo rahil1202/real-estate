@@ -114,7 +114,7 @@ const Footer = () => {
 
       {/* Scroll to Top Button */}
       <Link
-        to="hero"
+        to="home"
         spy={true}
         offset={-100}
         smooth={true}
